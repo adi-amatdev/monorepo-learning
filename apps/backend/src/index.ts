@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express'
-import { BACKEND_URL } from '@repo/types'
+import { BACKEND_URL, Variable2 } from '@repo/types'
 
 const app = express();
 
@@ -9,5 +9,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(3003,()=>{
-    console.log(`Server is running on ${BACKEND_URL}`);
+    console.log(`Server is running on ${BACKEND_URL}, ${Variable2}`);
 });
